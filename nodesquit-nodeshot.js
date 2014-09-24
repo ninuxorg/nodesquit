@@ -31,21 +31,18 @@ if(!window.jQuery) {
     return url;
   }
   
-  function pulisci(text) {
-    var n = text.indexOf('-');
-    var m = text.indexOf(':');
+  function parse(text) {
+    var node1 = text.substring(0, text.search(' - '));
+    var node2 = text.substring(text.search(' - ') + 3, text.search(': '));
     
-    m = text.substring(n+2, m);
-    n = text.substring(0, n-1);
-    
-    return [n, m];
+    return [node1, node2];
   }
   
   function appendBtn() {
     $('div.distance-link').each(function(index, element){
       if(!($(element).hasClass('squit'))){
         
-        var nodi = pulisci($(element).text());
+        var nodi = parse($(element).text());
         var n = nodi[0];
         var m = nodi[1];
         
