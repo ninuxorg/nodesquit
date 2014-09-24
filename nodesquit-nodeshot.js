@@ -25,12 +25,6 @@ if(!window.jQuery) {
     return r;
   }
   
-  function genUrl(n, m) {
-    var url = '';
-    
-    return url;
-  }
-  
   function parse(text) {
     var node1 = text.substring(0, text.search(' - '));
     var node2 = text.substring(text.search(' - ') + 3, text.search(': '));
@@ -69,8 +63,6 @@ if(!window.jQuery) {
     });
     
   }
-  
-  console.log('NSOne');
   
   $(window).load(function(){
     setInterval(appendBtn, 2000);

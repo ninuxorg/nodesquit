@@ -23,8 +23,6 @@ if(!window.jQuery) {
   
   $(window).load(function(){
 
-    console.log('Starting HWT Path Profiler Commander');
-
     var na = getUrlVars()["na"];
     var no = getUrlVars()["no"];
     var ma = getUrlVars()["ma"];
