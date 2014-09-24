@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Nodesquit One
+// @name        Nodesquit Nodeshot
 // @namespace   leone@inventati.org
 // @include     http://map.ninux.org*
 // @version     1
@@ -42,7 +42,6 @@ if(!window.jQuery) {
   }
   
   function appendBtn() {
-    //console.log('appendBtn called');
     $('div.distance-link').each(function(index, element){
       if(!($(element).hasClass('squit'))){
         
@@ -60,7 +59,6 @@ if(!window.jQuery) {
           
           $(element).addClass('squit');
           
-          //console.log(url);
           var btn = '<a class="link-hide" target="blank" href="'+url+'">profilo</a>';
           $(element).append(btn);
 
