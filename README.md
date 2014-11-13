@@ -1,11 +1,13 @@
-= Nodesquit =
+Nodesquit
+=========
 
-Userscripts to install in your browser that extend Nodeshot features.
+Userscripts to install in your browser that extend **Nodeshot 0.9.x** features.
 
 * nodesquit-nodeshot: elevation profile for Nodeshot
 * nodesquit-profiler: use heywhatsthat as a backend profiler
 
-= Installation and usage =
+Installation and usage
+======================
 
 * Install Greasemonkey plugin for Firefox.
 * Add the nodesquit-nodeshot and nodesquit-profiler scripts to it.
