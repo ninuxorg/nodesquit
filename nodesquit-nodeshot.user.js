@@ -51,7 +51,7 @@ if(!window.jQuery) {
           $(element).addClass('squit');
           
           var btn = '<a class="link-hide" target="blank" href="'+url+'">profilo</a>';
-          $(element).append(btn);
+          $(element).children("span").append(btn);
 
         }, 'json').fail(function(){
           console.error('Failed to get nodes.json');
